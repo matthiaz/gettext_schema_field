@@ -1,13 +1,13 @@
 defmodule GettextSchemaField.MixProject do
   use Mix.Project
 
-  @version "0.1.1"
+  @version "0.2.1"
 
   def project do
     [
       app: :gettext_schema_field,
       version: @version,
-      elixir: "~> 1.6",
+      elixir: "~> 1.9",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       package: package(),
@@ -25,7 +25,7 @@ defmodule GettextSchemaField.MixProject do
 
   defp deps do
     [
-      {:gettext, "~> 0.15"},
+      {:gettext, "~> 1.0"},
       {:ex_doc, "~> 0.19", only: :dev, runtime: false}
     ]
   end
